@@ -1,10 +1,10 @@
 export default {
-    logo: "../assets/logo-avadomain.png",
-    name: "Equativa",
-    alias: "equativa",
-    description: "Un service qui sert de boilerplate.",
-    footer: "COPYRIGHT 2023 - EQUATIVA",
+    logo: "../assets/logo-emoji.png",
+    name: "Emoji",
+    alias: "emoji",
+    description: "Un service qui vous permet de trouver et d'utiliser des emojis.",
+    footer: "COPYRIGHT 2023 - EMOJI",
     keywords: [],
-    enabledAnalytics: false,
-    codeG4A: ''
+    enabledAnalytics: true,
+    codeG4A: 'G-Q5G7T2HNW1'
 }

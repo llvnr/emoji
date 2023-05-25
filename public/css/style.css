@@ -12,7 +12,7 @@ html, body {
 }
 
 .ShellTop {
-    flex: 0.5;
+    flex: 1;
     background-color: var(--shell-top-background-color);
     color: var(--shell-top-color);
     display: flex;
@@ -141,3 +141,82 @@ html, body {
     padding-left: 1em;
     padding-bottom: 1em;
 }
+
+/* APP */
+
+/* .cadre__service {
+    background-color: #F6F7FD;
+    color: black;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+} */
+
+.cadre__navigation {
+    min-height: 2em;
+    height: auto;
+    background-color: #e6e7ee;
+    color: black;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+.cadre__service_logo {
+    padding-top: 1em;
+}
+
+.navigation__application {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    margin:0;
+    list-style-type:none;
+}
+
+.navigation__application_element {
+    float: left;
+    margin-left: 10px;
+}
+
+.container__application-emojix {
+    padding: 1.5em;
+}
+
+.ShellEJX__search {
+    width: 99.3%;
+    height: 2.5em;
+    border: 1px solid var(--shellejx-search-border);
+    background-color: var(--shellejx-search-background);
+    color: var(--shellejx-search-color);
+}
+
+.ShellEJX__container {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33.33%);
+}
+
+.ShellEJX__card {
+    background-color: var(--shellejx-card-background);
+    border: 1px solid var(--shellejx-card-border);
+    padding: 2.5em;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0.5em;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+
+.ShellEJX__card-emoji {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.ShellEJX__card-name {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    color: var(--shellejx-cardname-color);
+}
+
+/* APP */

@@ -16,4 +16,29 @@
         display: none;
     }
 
+    .container__application-emojix {
+        padding: 0.2em;
+    }
+
+    .ShellEJX__container {
+        margin-top: 1em;
+        display: block;
+    }
+
+    .ShellEJX__search {
+        width: 97.5%;
+        height: 2.5em;
+    }
+
+    .ShellEJX__card {
+        background-color: var(--shellejx-card-background);
+        border: 1px solid var(--shellejx-card-border);
+        padding: 1.5em;
+        text-align: center;
+        border-radius: 15px;
+        margin: 0.1em;
+        margin-bottom: 0.5em;
+        cursor: pointer;
+    }
+
 }

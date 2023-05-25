@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Equativa - Service Name.</title>
+    <meta name="description" content="Un service qui fournis près de 3000 émojis à copier et à coller.">
+    <title>Emoji - Près de 3000 émojis à votre disposition.</title>
 
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
     <link rel="stylesheet" href="{{ asset("css/responsive.css") }}">

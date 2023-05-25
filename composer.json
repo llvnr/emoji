@@ -12,6 +12,7 @@
         "laravel/tinker": "^2.7",
         "marvinlabs/laravel-discord-logger": "^1.4",
         "rachidlaasri/laravel-installer": "^4.1",
+        "spatie/emoji": "^4.0",
         "tymon/jwt-auth": "^2.0"
     },
     "require-dev": {

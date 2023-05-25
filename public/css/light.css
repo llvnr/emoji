@@ -9,4 +9,12 @@
     --shellauth-load-card-border-top: 1px solid #F1F0F9;
     --cadre-service-background-color: #F6F7FD;
     --cadre-service-color: black;
+    /* APP */
+    --shellejx-search-border: black;
+    --shellejx-search-background: white;
+    --shellejx-search-color: black;
+    --shellejx-card-background: white;
+    --shellejx-card-border: black;
+    --shellejx-cardname-color: black;
+    /* APP */
 }

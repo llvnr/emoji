@@ -3,6 +3,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Models\User;
+use Illuminate\Support\Facades\Log;
+use Spatie\Emoji\Emoji;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,44 +17,26 @@ use App\Models\User;
 |
 */
 
-// Route::post('/uuid', function() {
+Route::group([
+    'prefix' => 'emojix'
+], function ($router) {
 
-//     // Generate 16 bytes (128 bits) of random data or use the data passed into the function.
-//     $data = $data ?? random_bytes(16);
-//     assert(strlen($data) == 16);
+    Route::post('/all', function() {
+        $allEmoji = Emoji::all();
 
-//     // Set version to 0100
-//     $data[6] = chr(ord($data[6]) & 0x0f | 0x40);
-//     // Set bits 6-7 to 10
-//     $data[8] = chr(ord($data[8]) & 0x3f | 0x80);
+        return response()->json($allEmoji);
 
-//     // Output the 36 character UUID.
-//     $uuid = vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+    });
 
-//     $checkUser = User::where('uuid', $uuid)->exists();
+    Route::post("/utilisation", function() {
 
-//     if($checkUser){
-//         return response()->json([
-//             "status" => false,
-//             "message" => "Une erreur est survenue, veuillez recommencer..."
-//         ]);
-//     } else {
-//         return response()->json([
-//             "status" => true,
-//             "uuid" => $uuid
-//         ]);
-//     }
+        $emoji = request("emoji");
+        $clientIP = request()->ip();
 
-// });
+        Log::info("[Emojix] - Le service a été solliciter pour copier un emoji : '.$emoji.'.");
 
-// Route::group([
-//     'middleware' => 'api',
-//     'prefix' => 'auth'
-// ], function ($router) {
-//     Route::post('/login', [AuthController::class, 'login']);
-//     Route::post('/register', [AuthController::class, 'register']);
-//     Route::post('/logout', [AuthController::class, 'logout']);
-//     Route::post('/refresh', [AuthController::class, 'refresh']);
-//     Route::get('/user-profile', [AuthController::class, 'userProfile']);    
-//     Route::post('/check', [AuthController::class, 'check']);
-// });
+        return response()->json(true);
+
+    });
+
+});
